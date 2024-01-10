@@ -30,6 +30,13 @@ object HigherOrderFunction {
     // Set log level to avoid unnecessary logs
     spark.sparkContext.setLogLevel("ERROR")
 
+
+
+    // Simple HigherOrder Function
+    val list = List(1,2,3,4,5,6,7,8,9,0)
+    println(list.map(x => x + 2))
+
+
     val df = spark.read.option("header", "true").csv("/home/ubuntu/IdeaProjects/ilaya/IlayaBharathi260199/Scala/files/employees.csv")
 
     println("========First=======")
@@ -49,6 +56,8 @@ object HigherOrderFunction {
 
     val fin=l.map(x => mul(x))
       fin.foreach(println)
+
+
 
 
   }

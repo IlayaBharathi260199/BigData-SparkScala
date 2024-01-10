@@ -17,7 +17,7 @@ libraryDependencies ++= Seq(
   "com.amazonaws" % "aws-java-sdk-kinesis" % "1.11.744",
   "com.fasterxml.jackson.core" % "jackson-core" % "2.11.1",
   "mysql" % "mysql-connector-java" % "8.0.26",
-  "com.fasterxml.jackson.dataformat" % "jackson-dataformat-cbor" % "2.6.7",
+  "com.fasterxml.jackson.dataformat" % "jackson-dataformat-cbor" % "2.6.7"
 
 )
 lazy val root = (project in file("."))
