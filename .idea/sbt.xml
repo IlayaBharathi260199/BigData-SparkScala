@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaSbtSettings">
+    <option name="linkedExternalProjectsSettings">
+      <SbtProjectSettings>
+        <option name="converterVersion" value="1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.9.7" />
+      </SbtProjectSettings>
+      <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ComplexDataHandling" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ComplexDataHandling" />
+            <option value="$PROJECT_DIR$/ComplexDataHandling/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.9.8" />
+      </SbtProjectSettings>
+      <SbtProjectSettings>
+        <option name="converterVersion" value="1" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/KafkaSteaming" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/KafkaSteaming" />
+            <option value="$PROJECT_DIR$/KafkaSteaming/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.9.7" />
+      </SbtProjectSettings>
+      <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Pipelines" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Pipelines" />
+            <option value="$PROJECT_DIR$/Pipelines/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.9.8" />
+      </SbtProjectSettings>
+      <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Project-GCP" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Project-GCP" />
+            <option value="$PROJECT_DIR$/Project-GCP/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.9.8" />
+      </SbtProjectSettings>
+      <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Scala" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Scala" />
+            <option value="$PROJECT_DIR$/Scala/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.9.7" />
+      </SbtProjectSettings>
+      <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/SparkDSL" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/SparkDSL" />
+            <option value="$PROJECT_DIR$/SparkDSL/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.9.7" />
+      </SbtProjectSettings>
+      <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/SparkSQL" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/SparkSQL" />
+            <option value="$PROJECT_DIR$/SparkSQL/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.9.8" />
+      </SbtProjectSettings>
+      <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Spark_AWS_S3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Spark_AWS_S3" />
+            <option value="$PROJECT_DIR$/Spark_AWS_S3/project" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.9.7" />
+      </SbtProjectSettings>
+    </option>
+  </component>
+</project>
