@@ -6,7 +6,7 @@ package Basic
 3.Anonymous functions are useful when you need to pass a short piece of functionality as an argument to higher-order functions
 4.The basic syntax for an anonymous function in Scala uses the => (rocket) symbol
 5.wherever we see '=>', we can say it is a Anonymous_Function
-6. we can assign it in variable
+6.we can assign it in variable
 */
 object Anonymous_Function {
 

@@ -1,7 +1,10 @@
 package Basic
 
 object scala {
-
+  def factorial(n: Int): BigInt = {
+    if (n <= 1) 1
+    else n * factorial(n - 1)
+  }
   def main(args: Array[String]): Unit = {
 
     val a = 5
