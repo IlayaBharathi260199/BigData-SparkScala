@@ -62,12 +62,16 @@ object HigherOrderFunction {
 
     def hof (a:Int,b:Int,f:(Int,Int)=>Int):Int = f(a,b)
 
-    println(hof(5,6,(x,y) => x * y))
+    println(hof(5,6,(x,y) => x + y))
 
       def paf(x:Int)(y:Int) = x + y
 
   val x =  paf(4)_
     println(x(6))
+
+
+
+
 
 
 
