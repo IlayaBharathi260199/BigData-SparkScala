@@ -27,7 +27,7 @@ object Joins {
 
     println
     println("=====Inner======")
-    cust.join(prod, Seq("id"), "inner").show(false)
+    cust.join(prod, cust("id") === prod("id"), "inner").show(false)
 
     println
     println("=====Left======")

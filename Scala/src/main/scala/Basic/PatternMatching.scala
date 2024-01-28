@@ -51,6 +51,15 @@ object PatternMatching {
       case i: Int => println("Int " + i)
 
 
+
+
+        val a = 5
+        a match {
+          case n if n % 2 == 0 => print("Even")
+          case _ => print("Odd")
+        }
+
+
     }
 
   }
