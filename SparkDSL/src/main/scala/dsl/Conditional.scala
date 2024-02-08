@@ -27,5 +27,7 @@ object Conditional {
 
     val minimum=data.agg(min("Age")).show(false)
 
+
+
   }
 }

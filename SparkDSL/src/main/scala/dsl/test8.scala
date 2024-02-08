@@ -60,7 +60,20 @@ object test8 {
 //    df.except(df.dropDuplicates()).show(false)
 
 
-    df.filter(lower(col("Name")).contains("dan")).show()
+//    df.filter(lower(col("Name")).contains("dan")).show()
 
+
+    val win = Window.orderBy("salary")
+    df.withColumn("rn",dense_rank().over(win)).filter(col("rn") <= 5).select("Name","Department").show()
+
+    df.groupBy("Department").agg(max("salary").as("max_salary")).show(false)
+
+    val df1 = df.select(avg("salary").cast(IntegerType).alias("avg_salary"))
+    df.filter(col("salary") > df1.first().getInt(0)).show()  // 59166.666666666664
+
+
+    df.withColumn("avg",avg("salary").over()).filter(col("salary") > col("avg")).select("Name","Department","Salary").show()
+
+    df.filter(lower(col("Name")).contains("da")).show()
   }
 }

@@ -63,6 +63,8 @@ object test6 {
     val df2 = df.groupBy("ROLL_NO").pivot("SUBJECT").max("MARKS")
     df1.join(df2, Seq("ROLL_NO")).show(false)
 
+    val df3 = df.groupBy("ROLL_NO").pivot("SUBJECT").sum("MARKS").show()
+
 
   }
 }

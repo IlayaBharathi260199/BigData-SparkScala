@@ -54,21 +54,24 @@ object test5 {
     // Show the DataFrame
     df.show()
 
-//    val my_window = Window.orderBy(col("max_count").desc)
-//    df.withColumn("Count", when(col("action") === "click", 1).otherwise(0))
-//      .drop("timestamp")
-//      .filter(col("action") === "click")
-//      .groupBy("id", "action").agg(sum(col("Count")).alias("max_count"))
-//      .withColumn("rank", dense_rank().over(my_window))
-//      .filter(col("rank") <= 2)
-//      .show(false)
-//
-//    val my_window1 = Window.orderBy(col("count").desc)
-//    df.filter(col("action") === "click")
-//      .groupBy("id","action").count()
-//      .withColumn("rank", dense_rank.over(my_window1))
-//      .filter(col("rank") <= 5)
-//      .show(false)
+    df.withColumn("day",dayofmonth(col("timestamp")) === 1).filter(col("day") === "true")
+      .select("id","action").show()
+
+    val my_window = Window.orderBy(col("max_count").desc)
+    df.withColumn("Count", when(col("action") === "click", 1).otherwise(0))
+      .drop("timestamp")
+      .filter(col("action") === "click")
+      .groupBy("id", "action").agg(sum(col("Count")).alias("max_count"))
+      .withColumn("rank", dense_rank().over(my_window))
+      .filter(col("rank") <= 2)
+      .show(false)
+
+    val my_window1 = Window.orderBy(col("count").desc)
+    df.filter(col("action") === "click")
+      .groupBy("id","action").count()
+      .withColumn("rank", dense_rank.over(my_window1))
+      .filter(col("rank") <= 5)
+      .show(false)
 
 val myw = Window.partitionBy("action").orderBy(col("count").desc)
     df.groupBy("id","action").count().filter(col("action") === "click")
@@ -78,25 +81,6 @@ val myw = Window.partitionBy("action").orderBy(col("count").desc)
 
 
     df.filter(col("action").isin("click","view")).show(false)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   }
 }

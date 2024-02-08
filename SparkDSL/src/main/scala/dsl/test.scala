@@ -22,11 +22,9 @@ object test {
     val df = spark.createDataFrame(spark.sparkContext.parallelize(rows), schema)
 
     //df.show(false)
-     val win = Window.orderBy(lit(""))
 val df1 =df.withColumn("raw_text",regexp_replace(col("raw_text"),"[-\\-!'.,]",""))
   val df2 = df1.withColumn("raw_text",split(col("raw_text")," "))
     val df3 = df2.select(explode(col("raw_text"))).groupBy("col").count()
-      .withColumn("rank",row_number().over(win))
     df3.show(100,false)
 
 

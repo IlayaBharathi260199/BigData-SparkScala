@@ -54,8 +54,7 @@ object test7 {
       .show()
 
 
-
-
+   df.withColumn("name_rev",reverse(col("Name"))).show(false)
 
 
   }

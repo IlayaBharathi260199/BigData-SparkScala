@@ -36,7 +36,7 @@ object Regex_replace {
     // To remove Special characters from data pattern = "[^a-zA-Z ]"(common)
     // Specify the special characters you want to remove
     // val specialCharacters = [,\\!@]
-    val speChar = data.withColumn("Email", regexp_replace(col("Email"), "[^a-zA-Z ]", ""))
+    val speChar = data.withColumn("Email", regexp_replace(col("Email"), "[^a-zA-Z]", ""))
     println()
     println("=====Special characters Removed=====")
     speChar.show(false)

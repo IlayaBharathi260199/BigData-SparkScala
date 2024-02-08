@@ -39,7 +39,7 @@ object test4 {
     // Show the DataFrame
     df.show()
 
-   //a) Identify columns that contain no null values.
+   //a) Identify columns that contain  no null values.
     println("==NotNull==")
     val not_null = df.columns.filter(x => df.filter(col(x).isNull).count() == 0)
     not_null.foreach(println)
